@@ -1,0 +1,143 @@
+/* 폰트 추가 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* 페이지 설정 */
+body {
+	display: flex;
+	justify-content: center;
+	background-color: #171d2e;
+	font-family: "Noto Sans KR", sans-serif;
+}
+.wrap {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 405px;
+	background-color: transparent;
+	padding: 60px 0;
+}
+
+/* 프로필 이미지, 이름, 간단 설명 설정*/
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile .image {
+	width: 103px;
+	height: 103px;
+	border-radius: 15%;
+	margin-bottom: 25px;
+}
+
+.profile .name,
+.description {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.profile .name {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.profile .description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* 가로줄 구분선 */
+.horizontal-rule {
+	width: 60%;
+	height: 1px;
+	border: 0;
+	background-color: #fff;
+	margin: 30px auto 50px;
+}
+
+/* 외부 링크 (전화번호, 이메일, 인스타 등..) */
+.external {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 60%;
+	margin: 0 auto;
+	gap: 15px;
+}
+.external .link {
+	cursor: pointer;
+}
+
+/* 버튼 */
+.buttons {
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttons .button {
+	width: 100%;
+	height: 54px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #fff;
+	border-radius: 10px;
+
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* 텍스트 */
+.text {
+	color: #ffffff;
+	text-align: center;
+}
+.text .small {
+	font-size: 14px;
+}
+.text .big {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* 사진 */
+.photo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 10px;
+}
+
+.photo img {
+	width: 55%;
+	height: 200px;
+
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* 유튜브 */
+.youtube {
+	width: 100%;
+	height: 230px;
+	padding: 30px 0;
+}
+.youtube iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
